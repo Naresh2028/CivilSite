@@ -4,7 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServiceComponent } from './service/service.component';
-import { LocationStrategy,HashLocationStrategy } from '@angular/common';
 
 const routes: Routes = [
   {path:'',pathMatch:'full',component:HomeComponent},
@@ -15,7 +14,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-  providers:[{provide:LocationStrategy,useClass:HashLocationStrategy}]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
