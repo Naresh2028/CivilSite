@@ -47,8 +47,17 @@ export class LoginComponent implements OnInit {
 
     const {userName,password} = this.loginForm.value;
 
-    if(userName === 'test' && password === 'test'){
-      alert('Form submit successfully!');
+    if(userName&& password){
+      this.loginService.postLogin(userName,password).subscribe({
+        next:(data) => {
+          if(data){
+            alert("Form is Validated");
+          }
+        },
+        error:() => {
+          alert('something went wrong!');
+        }
+      });
       this.loginForm.reset();
     }
     else{
