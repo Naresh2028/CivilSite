@@ -1,0 +1,30 @@
+<div class="container">
+<form [formGroup]="loginForm" (ngSubmit)="SubmitLogin()">
+    <label for="userName" >Login</label>
+    <input type="text" id="userName" class="form-control" formControlName="userName">
+    <div *ngIf="userName?.errors && (userName?.dirty || userName?.touched)">
+        <div *ngIf="userName?.errors?.['required']"  class="alert alert-danger">
+            <span class="danger">User is Required</span>
+        </div>
+    </div>
+    <hr>
+
+    <label for="password" >Password</label>
+    <input type="password" id="password" class="form-control" formControlName="password">
+
+    <div *ngIf="password?.errors && (password?.dirty || password?.touched) ">
+        <div *ngIf="password?.errors?.['required']" class="alert alert-danger">
+            <span class="danger">Password is Required</span>
+        </div>
+    </div>
+
+    <br>
+    <div *ngIf="loginForm.valid">
+        <p class="alert alert-success">
+            Your form is valid, you can submit
+        </p>
+    </div>
+    <hr>
+    <button id="btn" class="btn btn-primary" [disabled]="loginForm.invalid" type="submit">Submit</button>
+</form>
+</div>
