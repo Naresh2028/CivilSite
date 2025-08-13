@@ -11,7 +11,8 @@ export class LoginService {
   constructor(private http:HttpClient) { }
 
   login!:Login;
-  private API_URL = '';
+  
+  private API_URL = 'https://localhost:7040/api/Login/login';
 
   postLogin(userName:string,password:string):Observable<Login>{
     const login = {userName,password}

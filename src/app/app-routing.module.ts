@@ -6,11 +6,13 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { EnquiryComponent } from './enquiry/enquiry.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {path:'contact',component:ContactComponent},
-  {path:'login',component:LoginComponent},
+  {path:'Login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
+  {path:'dashboard',component:DashboardComponent},
   {path:'enquiry',component:EnquiryComponent},
   {path:'',pathMatch:'full',component:HomeComponent},
   {path:'**',component:NotfoundComponent}

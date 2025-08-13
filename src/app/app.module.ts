@@ -14,6 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     LogoutComponent,
     EnquiryComponent,
     RegisterComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

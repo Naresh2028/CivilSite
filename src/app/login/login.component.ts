@@ -3,7 +3,6 @@ import {Login} from '../Interface/login';
 import {Router} from '@angular/router';
 import { FormBuilder,FormGroup, Validators} from '@angular/forms';
 import { LoginService } from '../Service/login.service';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -51,7 +50,7 @@ export class LoginComponent implements OnInit {
       this.loginService.postLogin(userName,password).subscribe({
         next:(data) => {
           if(data){
-            alert("Form is Validated");
+            this.route.navigate(['dashboard']);
           }
         },
         error:() => {
