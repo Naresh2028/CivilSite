@@ -1,0 +1,55 @@
+/* Navbar styles */
+.navbar {
+  background-color: orange;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.navbar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+img {
+  width: auto;
+  height: 80px;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.navbar .active {
+  border-bottom: 2px solid #f39c12;
+}
+
+/* Page content */
+.content {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.content h1 {
+  color: orange;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  color: orange;
+  font-size: 1.2rem;
+}
+
+.contentImage{
+    width: auto;
+    height: 255px;
+    text-align: center;
+}

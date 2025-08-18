@@ -7,14 +7,11 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
 import { EnquiryComponent } from './enquiry/enquiry.component';
-import { RegisterComponent } from './register/register.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +20,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent,
-    LogoutComponent,
     EnquiryComponent,
-    RegisterComponent,
     NotfoundComponent,
-    DashboardComponent
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
