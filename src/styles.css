@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.whatsapp-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float img,
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+}

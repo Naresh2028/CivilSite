@@ -2,20 +2,49 @@
   background-color: orange;
   padding: 0.8rem 1.5rem;
   display: flex;
-  justify-content: space-between;  /* Logo left, links right */
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;       /* ✅ allow wrapping on small screens */
   border-radius: 6px;
 }
 
 .logo img {
-  height: 60px;
+  height: 50px;
   width: auto;
 }
 
+/* Links container */
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+/* ✅ Mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;     /* Stack logo + links */
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;     /* Stack links vertically */
+    gap: 1rem;
+    margin-top: 0.8rem;
+  }
+}
+
 
 .nav-links a {
   color: white;             /* ✅ white instead of blue */
